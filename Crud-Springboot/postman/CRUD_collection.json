@@ -1,0 +1,136 @@
+{
+  "info": {
+    "_postman_id": "02c70f74-a82f-4d56-b432-23c897ee8d72",
+    "name": "CRUD Productos Spring Boot",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52396831",
+    "_collection_link": "https://go.postman.co/collection/52396831-02c70f74-a82f-4d56-b432-23c897ee8d72?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Listar todos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Producto",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Mouse Gamer\",\r\n  \"descripcion\": \"Inalambrico RGB\",\r\n  \"precio\": 599.99,\r\n  \"stock\": 20,\r\n  \"fechaCreacion\": \"2026-02-14\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/productos/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "productos",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Producto",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Mouse Gamer PRO\",\r\n  \"descripcion\": \"Inalambrico RGB\",\r\n  \"precio\": 799.99,\r\n  \"stock\": 10,\r\n  \"fechaCreacion\": \"2026-02-14\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/productos/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "productos",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar Producto",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Mouse Gamer PRO\",\r\n  \"descripcion\": \"Inalambrico RGB\",\r\n  \"precio\": 799.99,\r\n  \"stock\": 10,\r\n  \"fechaCreacion\": \"2026-02-14\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/productos/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "productos",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
